@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link href="./assets/style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav
+        id="navbar"
+        class="fixed z-[100] flex min-w-full items-center justify-between bg-slate-50 bg-opacity-70 px-12 py-1 shadow-lg backdrop-blur-md transition-all duration-500 ease-out"
+      >
+        <img class="" src="./assets/img/logo_2.png" alt="" />
+        <ul class="flex gap-x-10">
+          <li class="">Home</li>
+          <li>Blog</li>
+          <li>About</li>
+        </ul>
+        <div class="flex gap-3">
+          <div class="">Login</div>
+        </div>
+      </nav>
+    </header>
+    <main class="">
+      <div class="container mx-auto flex min-h-screen items-center lg:px-9">
+        <div class="mr-14 flex w-64 flex-1 flex-col gap-5">
+          <h1 class="text-6xl font-semibold 2xl:text-7xl">
+            Create your blog with your own
+            <div class="relative w-fit">
+              <!-- <span
+                class="z-1 absolute -bottom-1 left-0 h-2 w-full bg-slate-600"
+              ></span> -->
+              <span
+                class="hover:ease-custom-ease-out relative underline decoration-orange-300 decoration-wavy decoration-4 hover:underline-offset-8 hover:transition-all"
+              >
+                Creativity!
+              </span>
+            </div>
+          </h1>
+          <p class="text-lg">
+            Don't waste time and join our community of authors! Share your
+            knowledge and experience with our readers and get the opportunity to
+            become a part of our professional and creative team!
+          </p>
+          <button class="w-fit rounded-lg bg-orange-500 px-8 py-4 text-white">
+            Create your article
+          </button>
+        </div>
+        <div class="flex w-32 flex-1 gap-8">
+          <div class="flex flex-col gap-3">
+            <img src="./assets/img/home/hero_1.png" alt="" />
+            <div class="flex items-center justify-center gap-1">
+              <img class="" src="./assets/img/home/at.png" alt="" />
+              <p class="text-xs">by Guzmán Barquín</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-3 self-end pt-10">
+            <div class="flex items-center justify-center gap-1">
+              <img class="" src="./assets/img/home/at.png" alt="" />
+              <p class="text-xs">by Guzmán Barquín</p>
+            </div>
+            <img src="./assets/img/home/hero_2.png" alt="" />
+          </div>
+          <div class="flex flex-col gap-3">
+            <img src="./assets/img/home/hero_3.png" alt="" />
+            <div class="flex items-center justify-center gap-1">
+              <img class="" src="./assets/img/home/at.png" alt="" />
+              <p class="text-xs">by Guzmán Barquín</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container relative mx-auto flex gap-3">
+        <div class="basis-9/12">
+          <div class="flex flex-col">
+            <div class="flex items-center justify-between">
+              <h1 class="text-4xl font-bold">Popular Topic</h1>
+              <div class="flex items-center gap-3">
+                <p>Show All Blog</p>
+                <span
+                  ><img
+                    class="w-4 object-contain"
+                    src="assets/img/home/up-right-arrow 1.png"
+                    alt=""
+                /></span>
+              </div>
+            </div>
+            <div class="my-10 flex justify-between">
+              <div
+                class="flex min-w-72 max-w-72 gap-3 rounded-lg px-4 py-3 outline-slate-200 transition-all duration-300 ease-in-out hover:outline hover:outline-1 hover:outline-offset-0"
+              >
+                <div class="h-20 w-20 rounded-full">
+                  <img src="./assets/img/home/topic/img.png" alt="" />
+                </div>
+                <div class="flex flex-col justify-center">
+                  <h5 class="text-lg font-semibold">Daily</h5>
+                  <p class="text-sm">Daily activities</p>
+                </div>
+              </div>
+              <div
+                class="flex min-w-72 max-w-72 gap-3 rounded-lg px-4 py-3 outline-slate-200 transition-all duration-300 ease-in-out hover:outline hover:outline-1 hover:outline-offset-0"
+              >
+                <div class="h-20 w-20 rounded-full">
+                  <img src="./assets/img/home/topic/img-1.png" alt="" />
+                </div>
+                <div class="flex flex-col justify-center">
+                  <h5 class="text-lg font-semibold">Web Develop</h5>
+                  <p class="text-sm">All about websites</p>
+                </div>
+              </div>
+              <div
+                class="flex min-w-72 max-w-72 gap-3 rounded-lg px-4 py-3 outline-slate-200 transition-all duration-300 ease-in-out hover:outline hover:outline-1 hover:outline-offset-0"
+              >
+                <div class="h-20 w-20 rounded-full">
+                  <img src="./assets/img/home/topic/img-2.png" alt="" />
+                </div>
+                <div class="flex flex-col justify-center">
+                  <h5 class="text-lg font-semibold">Tips</h5>
+                  <p class="text-sm">Tips & Trick</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex w-full flex-wrap gap-10">
+              <div
+                class="flex basis-1/4 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+              >
+                <img src="assets/img/home/card.png" alt="" />
+                <h1 class="text-xl">
+                  Simple Juice Recipes to boost your immune system
+                </h1>
+              </div>
+              <div
+                class="flex basis-1/4 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+              >
+                <img src="assets/img/home/card.png" alt="" />
+                <h1 class="text-xl">
+                  Simple Juice Recipes to boost your immune system
+                </h1>
+              </div>
+              <div
+                class="flex basis-1/4 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+              >
+                <img src="assets/img/home/card.png" alt="" />
+                <h1 class="text-xl">
+                  Simple Juice Recipes to boost your immune system
+                </h1>
+              </div>
+              <div
+                class="flex basis-1/4 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+              >
+                <img src="assets/img/home/card.png" alt="" />
+                <h1 class="text-xl">
+                  Simple Juice Recipes to boost your immune system
+                </h1>
+              </div>
+              <div
+                class="flex basis-1/4 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+              >
+                <img src="assets/img/home/card.png" alt="" />
+                <h1 class="text-xl">
+                  Simple Juice Recipes to boost your immune system
+                </h1>
+              </div>
+              <div
+                class="flex basis-1/4 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+              >
+                <img src="assets/img/home/card.png" alt="" />
+                <h1 class="text-xl">
+                  Simple Juice Recipes to boost your immune system
+                </h1>
+              </div>
+              <div
+                class="flex basis-1/4 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+              >
+                <img src="assets/img/home/card.png" alt="" />
+                <h1 class="text-xl">
+                  Simple Juice Recipes to boost your immune system
+                </h1>
+              </div>
+              <div
+                class="flex basis-1/4 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+              >
+                <img src="assets/img/home/card.png" alt="" />
+                <h1 class="text-xl">
+                  Simple Juice Recipes to boost your immune system
+                </h1>
+              </div>
+              <div
+                class="flex basis-1/4 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+              >
+                <img src="assets/img/home/card.png" alt="" />
+                <h1 class="text-xl">
+                  Simple Juice Recipes to boost your immune system
+                </h1>
+              </div>
+              <div
+                class="flex basis-1/4 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+              >
+                <img src="assets/img/home/card.png" alt="" />
+                <h1 class="text-xl">
+                  Simple Juice Recipes to boost your immune system
+                </h1>
+              </div>
+              <div
+                class="flex basis-1/4 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+              >
+                <img src="assets/img/home/card.png" alt="" />
+                <h1 class="text-xl">
+                  Simple Juice Recipes to boost your immune system
+                </h1>
+              </div>
+              <div
+                class="flex basis-1/4 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+              >
+                <img src="assets/img/home/card.png" alt="" />
+                <h1 class="text-xl">
+                  Simple Juice Recipes to boost your immune system
+                </h1>
+              </div>
+              <div
+                class="flex basis-1/4 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+              >
+                <img src="assets/img/home/card.png" alt="" />
+                <h1 class="text-xl">
+                  Simple Juice Recipes to boost your immune system
+                </h1>
+              </div>
+              <div
+                class="flex basis-1/4 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+              >
+                <img src="assets/img/home/card.png" alt="" />
+                <h1 class="text-xl">
+                  Simple Juice Recipes to boost your immune system
+                </h1>
+              </div>
+              <div
+                class="flex basis-1/4 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+              >
+                <img src="assets/img/home/card.png" alt="" />
+                <h1 class="text-xl">
+                  Simple Juice Recipes to boost your immune system
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sticky top-28 h-fit basis-3/12">
+          <div class="flex h-fit w-full flex-col gap-7 px-10">
+            <h1 class="text-xl font-bold">Top Contributor</h1>
+            <div class="flex flex-col gap-5">
+              <div class="flex items-center gap-3">
+                <div class="h-10 w-10 rounded-full">
+                  <img
+                    src="assets/img/home/account/account_1.png"
+                    class="object-contain"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col justify-center">
+                  <h5 class="text-md font-semibold">Andrea Wise</h5>
+                  <p class="text-xs text-gray-500">12 articles</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="h-10 w-10 rounded-full">
+                  <img
+                    src="assets/img/home/account/account_2.png"
+                    class="object-contain"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col justify-center">
+                  <h5 class="text-md font-semibold">Andrea Wise</h5>
+                  <p class="text-xs text-gray-500">12 articles</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="h-10 w-10 rounded-full">
+                  <img
+                    src="assets/img/home/account/account_3.png"
+                    class="object-contain"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col justify-center">
+                  <h5 class="text-md font-semibold">Andrea Wise</h5>
+                  <p class="text-xs text-gray-500">12 articles</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="h-10 w-10 rounded-full">
+                  <img
+                    src="assets/img/home/account/account_4.png"
+                    class="object-contain"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col justify-center">
+                  <h5 class="text-md font-semibold">Andrea Wise</h5>
+                  <p class="text-xs text-gray-500">12 articles</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-3">
+                <div class="h-10 w-10 rounded-full">
+                  <img
+                    src="assets/img/home/account/account_5.png"
+                    class="object-contain"
+                    alt=""
+                  />
+                </div>
+                <div class="flex flex-col justify-center">
+                  <h5 class="text-md font-semibold">Andrea Wise</h5>
+                  <p class="text-xs text-gray-500">12 articles</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      const header = document.getElementById("header");
+
+      function scrolledNavbar() {
+        if (window.scrollY > 60) {
+          navbar.classList.add("mt-4", "rounded-full", "mx-auto");
+          navbar.classList.replace("min-w-full", "w-11/12");
+          header.classList.add("flex", "justify-center");
+        } else {
+          navbar.classList.remove("mt-4", "rounded-full", "mx-auto");
+          navbar.classList.replace("w-11/12", "min-w-full");
+          header.classList.remove("flex", "justify-center");
+        }
+      }
+
+      window.addEventListener("scroll", scrolledNavbar);
+    </script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.40/dist/lenis.min.js"></script>
+    <!-- <script>
+      const lenis = new Lenis({
+        lerp: 0.03, // Mengatur intensitas interpolasi linear menjadi lebih rendah
+        wheelMultiplier: 0.5, // Nilai wheelMultiplier yang lebih kecil untuk mengurangi jumlah pergerakan scroll
+      });
+
+      lenis.on("scroll", (e) => {
+        console.log(e);
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    </script> -->
+  </body>
+</html>
