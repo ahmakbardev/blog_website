@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .myButton {
+    @apply w-fit rounded-lg bg-slate-200 font-semibold shadow-md transition-all duration-300 ease-out hover:bg-slate-500;
+  }
+
+  .btn-primary {
+    @apply w-fit rounded-lg bg-orange-500 px-8 py-4 text-white;
+  }
+}
