@@ -3,11 +3,14 @@
 @tailwind utilities;
 
 @layer components {
-  .myButton {
+  .submitButton {
     @apply w-fit rounded-lg bg-slate-200 font-semibold shadow-md transition-all duration-300 ease-out hover:bg-slate-500;
   }
 
-  .btn-primary {
+  .btn-primary-lg {
     @apply w-fit rounded-lg bg-orange-500 px-8 py-4 text-white;
+  }
+  .btn-primary-sm {
+    @apply w-fit rounded-lg bg-orange-500 px-4 py-2 text-white;
   }
 }
