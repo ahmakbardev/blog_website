@@ -8,47 +8,125 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body>
+  <body class="">
     <header id="header">
       <nav
         id="navbar"
-        class="fixed z-[100] flex min-w-full max-w-full items-center justify-between bg-slate-50 bg-opacity-70 px-12 py-1 shadow-lg backdrop-blur-md transition-all duration-500 ease-out"
+        class="fixed z-[100] flex min-w-full max-w-full items-center justify-between bg-slate-50 bg-opacity-70 px-8 py-1 shadow-lg backdrop-blur-md transition-all duration-500 ease-out md:px-12"
       >
-        <img class="" src="./assets/img/logo_2.png" alt="" />
-        <ul class="flex gap-x-10">
-          <li class="">Home</li>
-          <li>Blog</li>
-          <li>About</li>
+        <img class="w-28" src="./assets/img/logo_2.png" alt="" />
+        <ul class="hidden gap-x-10 md:flex">
+          <li>
+            <a href="#">
+              <img
+                class="tooltip-trigger w-6"
+                data-tooltip="Home"
+                src="./assets/img/home/ic-actions-menu.png"
+                alt=""
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="tooltip-trigger w-6"
+                data-tooltip="Blog"
+                src="./assets/img/home/ic-actions-file.png"
+                alt=""
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="tooltip-trigger w-6"
+                data-tooltip="About"
+                src="./assets/img/home/ic-actions-list-users.png"
+                alt=""
+              />
+            </a>
+          </li>
         </ul>
         <div class="flex gap-3">
-          <div class="">Login</div>
+          <div id="right-nav" class="min-w-32 text-end">Login</div>
         </div>
       </nav>
+
+      <div class="mobile-nav flex justify-center">
+        <nav
+          class="fixed bottom-2 z-[100] mx-auto flex items-center justify-between rounded-3xl border-2 border-gray-800 bg-slate-50 bg-opacity-90 px-8 py-1 shadow-lg backdrop-blur-md transition-all duration-500 ease-out md:px-12"
+        >
+          <img class="w-28" src="./assets/img/logo_2.png" alt="" />
+          <ul class="hidden gap-x-10 md:flex">
+            <li>
+              <a href="#">
+                <img
+                  class="tooltip-trigger w-6"
+                  data-tooltip="Home"
+                  src="./assets/img/home/ic-actions-menu.png"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  class="tooltip-trigger w-6"
+                  data-tooltip="Blog"
+                  src="./assets/img/home/ic-actions-file.png"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  class="tooltip-trigger w-6"
+                  data-tooltip="About"
+                  src="./assets/img/home/ic-actions-list-users.png"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+          <div class="flex gap-3">
+            <div id="right-nav" class="min-w-32 text-end">Login</div>
+          </div>
+        </nav>
+      </div>
     </header>
-    <main class="">
-      <div class="container mx-auto flex min-h-screen items-center lg:px-9">
-        <div class="mr-14 flex w-64 flex-1 flex-col gap-5">
-          <h1 class="text-6xl font-semibold 2xl:text-7xl">
+    <main class="px-6">
+      <div
+        class="container mx-auto flex flex-col items-center md:min-h-screen md:flex-row lg:px-9"
+      >
+        <div
+          class="order-2 flex flex-col gap-5 md:order-1 md:mr-14 md:w-64 md:flex-1"
+        >
+          <h1 class="text-3xl font-semibold md:text-6xl 2xl:text-7xl">
             Create your blog with your own
             <div class="relative w-fit">
               <!-- <span
                 class="z-1 absolute -bottom-1 left-0 h-2 w-full bg-slate-600"
               ></span> -->
               <span
-                class="hover:ease-custom-ease-out relative underline decoration-orange-300 decoration-wavy decoration-4 hover:underline-offset-8 hover:transition-all"
+                class="relative underline decoration-orange-300 decoration-wavy decoration-4 hover:underline-offset-8 hover:transition-all hover:ease-custom-ease-out"
               >
                 Creativity!
               </span>
             </div>
           </h1>
-          <p class="text-lg">
+          <p class="text-sm md:text-lg">
             Don't waste time and join our community of authors! Share your
             knowledge and experience with our readers and get the opportunity to
             become a part of our professional and creative team!
           </p>
-          <button class="btn-primary">Create your article</button>
+          <button class="btn-primary-sm md:btn-primary-lg">
+            Create your article
+          </button>
         </div>
-        <div class="flex w-32 flex-1 gap-8">
+        <div
+          class="order-1 my-20 flex w-64 flex-1 justify-center gap-8 sm:w-96 md:order-2 md:w-32 lg:my-40"
+        >
           <div class="flex flex-col gap-3">
             <img src="./assets/img/home/hero_1.png" alt="" />
             <div class="flex items-center justify-center gap-1">
@@ -56,7 +134,7 @@
               <p class="text-xs">by Guzmán Barquín</p>
             </div>
           </div>
-          <div class="flex flex-col gap-3 self-end pt-10">
+          <div class="flex flex-col gap-3 self-end md:pt-10">
             <div class="flex items-center justify-center gap-1">
               <img class="" src="./assets/img/home/at.png" alt="" />
               <p class="text-xs">by Guzmán Barquín</p>
@@ -71,14 +149,50 @@
             </div>
           </div>
         </div>
+        <div class="hidden justify-center xl:flex">
+          <div class="">
+            <div
+              id="scroll-down"
+              class="scroll-down"
+              style="
+                width: 1em;
+                height: 1em;
+                background-color: transparent;
+                z-index: 1;
+                bottom: 25px;
+                position: absolute;
+                border-width: 0 0.25em 0.25em 0;
+                border-style: solid;
+                border-color: rgb(0, 0, 0);
+                animation: scrolldown 1.2s ease-in-out infinite 0.15s;
+              "
+            ></div>
+            <div
+              id="scroll-down"
+              class="scroll-down"
+              style="
+                width: 1em;
+                height: 1em;
+                background-color: transparent;
+                z-index: 1;
+                bottom: 40px;
+                position: absolute;
+                border-width: 0 0.25em 0.25em 0;
+                border-style: solid;
+                border-color: rgb(0, 0, 0);
+                animation: scrolldown 1.2s ease-in-out infinite;
+              "
+            ></div>
+          </div>
+        </div>
       </div>
-      <div class="container relative mx-auto flex gap-3">
-        <div class="basis-1 lg:basis-9/12">
+      <div class="container relative mx-auto my-16 md:my-0 lg:flex lg:gap-3">
+        <div class="xl:basis-9/12">
           <div class="flex flex-col">
-            <div class="flex items-center justify-between">
-              <h1 class="text-4xl font-bold">Popular Topic</h1>
+            <div class="flex w-full items-center justify-between">
+              <h1 class="text-lg font-bold md:text-4xl">Popular Topic</h1>
               <div class="flex items-center gap-3">
-                <p>Show All Blog</p>
+                <p class="text-sm">Show All Blog</p>
                 <span
                   ><img
                     class="w-4 object-contain"
@@ -87,9 +201,9 @@
                 /></span>
               </div>
             </div>
-            <div class="my-10 flex justify-between">
+            <div class="my-10 flex w-full flex-col justify-between sm:flex-row">
               <div
-                class="flex min-w-72 max-w-72 gap-3 rounded-lg px-4 py-3 outline-slate-200 transition-all duration-300 ease-in-out hover:outline hover:outline-1 hover:outline-offset-0"
+                class="flex gap-3 rounded-lg px-4 py-3 outline-slate-200 transition-all duration-300 ease-in-out hover:outline hover:outline-1 hover:outline-offset-0 sm:min-w-52 sm:max-w-52 md:min-w-60 md:max-w-60 lg:min-w-72 lg:max-w-72"
               >
                 <div class="h-20 w-20 rounded-full">
                   <img src="./assets/img/home/topic/img.png" alt="" />
@@ -100,7 +214,7 @@
                 </div>
               </div>
               <div
-                class="flex min-w-72 max-w-72 gap-3 rounded-lg px-4 py-3 outline-slate-200 transition-all duration-300 ease-in-out hover:outline hover:outline-1 hover:outline-offset-0"
+                class="flex gap-3 rounded-lg px-4 py-3 outline-slate-200 transition-all duration-300 ease-in-out hover:outline hover:outline-1 hover:outline-offset-0 sm:min-w-52 sm:max-w-52 md:min-w-60 md:max-w-60 lg:min-w-72 lg:max-w-72"
               >
                 <div class="h-20 w-20 rounded-full">
                   <img src="./assets/img/home/topic/img-1.png" alt="" />
@@ -111,7 +225,7 @@
                 </div>
               </div>
               <div
-                class="flex min-w-72 max-w-72 gap-3 rounded-lg px-4 py-3 outline-slate-200 transition-all duration-300 ease-in-out hover:outline hover:outline-1 hover:outline-offset-0"
+                class="flex gap-3 rounded-lg px-4 py-3 outline-slate-200 transition-all duration-300 ease-in-out hover:outline hover:outline-1 hover:outline-offset-0 sm:min-w-52 sm:max-w-52 md:min-w-60 md:max-w-60 lg:min-w-72 lg:max-w-72"
               >
                 <div class="h-20 w-20 rounded-full">
                   <img src="./assets/img/home/topic/img-2.png" alt="" />
@@ -122,63 +236,63 @@
                 </div>
               </div>
             </div>
-            <div class="my-10 flex w-full flex-wrap gap-5 2xl:justify-center">
+            <div
+              class="my-10 flex w-full flex-wrap justify-center gap-3 sm:gap-7 md:gap-5 lg:gap-5 xl:justify-start"
+            >
               <div
-                class="flex max-w-72 basis-2/6 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+                class="xl:max-w- flex min-w-32 max-w-32 flex-col gap-3 rounded-lg px-2 pb-3 pt-3 outline outline-1 outline-slate-200 sm:min-w-32 sm:max-w-48 sm:basis-1/2 md:min-w-40 md:max-w-56 md:rounded-[32px] md:px-3 md:pb-8 lg:max-w-64"
               >
                 <img src="assets/img/home/card.png" alt="" />
-                <h1 class="text-xl">
+                <h1 class="text-xs md:text-xl">
                   Simple Juice Recipes to boost your immune system
                 </h1>
               </div>
               <div
-                class="flex max-w-72 basis-2/6 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+                class="xl:max-w- flex min-w-32 max-w-32 flex-col gap-3 rounded-lg px-2 pb-3 pt-3 outline outline-1 outline-slate-200 sm:min-w-32 sm:max-w-48 sm:basis-1/2 md:min-w-40 md:max-w-56 md:rounded-[32px] md:px-3 md:pb-8 lg:max-w-64"
               >
                 <img src="assets/img/home/card.png" alt="" />
-                <h1 class="text-xl">
+                <h1 class="text-xs md:text-xl">
                   Simple Juice Recipes to boost your immune system
                 </h1>
               </div>
               <div
-                class="flex max-w-72 basis-2/6 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+                class="xl:max-w- flex min-w-32 max-w-32 flex-col gap-3 rounded-lg px-2 pb-3 pt-3 outline outline-1 outline-slate-200 sm:min-w-32 sm:max-w-48 sm:basis-1/2 md:min-w-40 md:max-w-56 md:rounded-[32px] md:px-3 md:pb-8 lg:max-w-64"
               >
                 <img src="assets/img/home/card.png" alt="" />
-                <h1 class="text-xl">
+                <h1 class="text-xs md:text-xl">
                   Simple Juice Recipes to boost your immune system
                 </h1>
               </div>
               <div
-                class="flex max-w-72 basis-2/6 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+                class="xl:max-w- flex min-w-32 max-w-32 flex-col gap-3 rounded-lg px-2 pb-3 pt-3 outline outline-1 outline-slate-200 sm:min-w-32 sm:max-w-48 sm:basis-1/2 md:min-w-40 md:max-w-56 md:rounded-[32px] md:px-3 md:pb-8 lg:max-w-64"
               >
                 <img src="assets/img/home/card.png" alt="" />
-                <h1 class="text-xl">
+                <h1 class="text-xs md:text-xl">
                   Simple Juice Recipes to boost your immune system
                 </h1>
               </div>
               <div
-                class="flex max-w-72 basis-2/6 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+                class="xl:max-w- flex min-w-32 max-w-32 flex-col gap-3 rounded-lg px-2 pb-3 pt-3 outline outline-1 outline-slate-200 sm:min-w-32 sm:max-w-48 sm:basis-1/2 md:min-w-40 md:max-w-56 md:rounded-[32px] md:px-3 md:pb-8 lg:max-w-64"
               >
                 <img src="assets/img/home/card.png" alt="" />
-                <h1 class="text-xl">
+                <h1 class="text-xs md:text-xl">
                   Simple Juice Recipes to boost your immune system
                 </h1>
               </div>
               <div
-                class="flex max-w-72 basis-2/6 flex-col gap-3 rounded-[32px] px-3 pb-8 pt-3 outline outline-1 outline-slate-200"
+                class="xl:max-w- flex min-w-32 max-w-32 flex-col gap-3 rounded-lg px-2 pb-3 pt-3 outline outline-1 outline-slate-200 sm:min-w-32 sm:max-w-48 sm:basis-1/2 md:min-w-40 md:max-w-56 md:rounded-[32px] md:px-3 md:pb-8 lg:max-w-64"
               >
                 <img src="assets/img/home/card.png" alt="" />
-                <h1 class="text-xl">
+                <h1 class="text-xs md:text-xl">
                   Simple Juice Recipes to boost your immune system
                 </h1>
               </div>
             </div>
-            <button
-              class="mx-auto btn-primary"
-            >
+            <button class="btn-primary-sm md:btn-primary-lg mx-auto">
               See more
             </button>
           </div>
-          <div class="my-10 hidden flex-col lg:flex">
+          <div id="hot-topic" class="my-10 hidden flex-col lg:flex">
             <h1 class="my-10 text-center text-3xl font-semibold">
               Hot topics now
             </h1>
@@ -201,7 +315,7 @@
                 </div>
               </div>
               <div
-                class="relative h-[32rem] basis-2/6 rounded-2xl bg-slate-200 p-8 transition-all duration-300 ease-in-out hover:basis-4/6"
+                class="relative h-[32rem] basis-2/6 rounded-2xl bg-slate-200 p-8 transition-all duration-300 ease-in-out hover:basis-5/6"
               >
                 <div class="absolute bottom-12 max-w-64 text-2xl font-bold">
                   <p
@@ -293,62 +407,82 @@
           </div>
         </div>
       </div>
-      <div class="relative mt-10 gap-3 bg-slate-200 py-20">
-        <div class="flex w-full flex-col items-center justify-center gap-6">
-          <h1 class="text-2xl font-bold">Need more info?</h1>
-          <form
-            action="POST"
-            class="flex w-1/2 justify-between rounded-lg bg-white px-4 py-6"
-          >
-            <div class="flex basis-2/3 items-center gap-3">
+    </main>
+    <!-- <input type="file" class="block w-full text-sm text-slate-500
+      file:mr-4 file:py-2 file:px-4
+    file:rounded-full file:border-0
+    file:text-sm file:font-semibold
+    file:bg-violet-50 file:text-violet-700
+    hover:file:bg-violet-100
+    "/> -->
+    <div class="relative mt-10 gap-3 bg-slate-200 py-20">
+      <div class="flex w-full flex-col items-center justify-center gap-6">
+        <h1 class="text-2xl font-bold">Need more info?</h1>
+        <form
+          action=""
+          class="flex flex-col justify-between gap-4 rounded-lg bg-white px-4 py-6 md:flex-row xl:w-1/2"
+        >
+          <div class="flex basis-2/3 items-center gap-3">
+            <label for="email">
               <img
                 src="./assets/img/home/ic-actions-user.png"
                 class="h-fit object-contain"
                 alt=""
               />
-              <input
-                type="email"
-                class="w-full px-1 py-2 focus:outline-none"
-                placeholder="Email Address"
-              />
-            </div>
-            <button type="submit" class="myButton basis-1/4">
-              Contact Us Now
-            </button>
-          </form>
-          <p class="text-center text-gray-500">
-            By clicking on “Contact Us Now” button I agree that my <br />
-            submitted data is being
-            <span class="underline">collected and stored.</span>
-          </p>
-        </div>
+            </label>
+            <input
+              name="email"
+              type="email"
+              class="w-full border-b-2 px-1 py-2 focus:outline-none"
+              placeholder="Email Address"
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn-primary-sm w-full basis-1/4 bg-orange-500 md:w-fit"
+          >
+            Contact Us Now
+          </button>
+        </form>
+        <p class="text-center text-gray-500">
+          By clicking on “Contact Us Now” button I agree that my <br />
+          submitted data is being
+          <span class="underline">collected and stored.</span>
+        </p>
       </div>
-    </main>
-    <footer class="font-bold p-10">
-      <div class="flex gap-40">
-        <section class="max-w-sm">
-          <img src="./assets/img/logo_2.png" alt="" class="pb-5">
+    </div>
+    <footer class="font-bold">
+      <div class="flex flex-col gap-10 p-10 md:flex-row md:gap-40">
+        <section class="basis-1/5">
+          <img src="./assets/img/logo_2.png" alt="" class="pb-5" />
           <div class="text-gray-400">
-            <p class="pb-5">Opening creativity without limits via ultimate bloging platform conecting all creative souls together.</p>
+            <p class="pb-5">
+              Opening creativity without limits via ultimate bloging platform
+              conecting all creative souls together.
+            </p>
             <p class="font-serif">By Acmee 2021</p>
           </div>
         </section>
-        <section>
-          <h4 class="text-orange-500 pb-5">CATEGORIES</h4>
-          <ul >
-            <li class="pb-5"><a href="">All categories</a></li>
-            <li class="pb-5"><a href="">Daily</a></li>
-            <li class="pb-5"><a href="">Health</a></li>
-            <li class="pb-5"><a href="">Life</a></li>
-            <li class="pb-5"><a href="">Tips and Tricks</a></li>
-          </ul>
-        </section>
-        <section>
-          <h4 class="text-orange-500 pb-5">ABOUT</h4>
-          <ul>
-            <li class="pb-5"><a href="">Team</a></li>
-          </ul>
-        </section>
+        <div
+          class="flex basis-1/5 justify-between sm:justify-start sm:gap-10 md:gap-52"
+        >
+          <section class="">
+            <h4 class="pb-5 text-orange-500">CATEGORIES</h4>
+            <ul>
+              <li class="pb-5"><a href="">All categories</a></li>
+              <li class="pb-5"><a href="">Daily</a></li>
+              <li class="pb-5"><a href="">Health</a></li>
+              <li class="pb-5"><a href="">Life</a></li>
+              <li class="pb-5"><a href="">Tips and Tricks</a></li>
+            </ul>
+          </section>
+          <section>
+            <h4 class="pb-5 text-orange-500">ABOUT</h4>
+            <ul>
+              <li class="pb-5"><a href="">Team</a></li>
+            </ul>
+          </section>
+        </div>
       </div>
     </footer>
     <script>
@@ -356,21 +490,43 @@
         const navbar = document.getElementById("navbar");
         const header = document.getElementById("header");
         const logoImg = document.querySelector("#navbar img");
+        const rightNav = document.getElementById("right-nav");
+        const hotTopic = document.getElementById("hot-topic");
 
-        if (window.scrollY > 60) {
-          navbar.classList.add("mt-4", "rounded-full", "mx-auto");
-          navbar.classList.replace("min-w-full", "w-11/12");
-          header.classList.add("flex", "justify-center");
+        if (navbar && header && logoImg && rightNav && hotTopic) {
+          if (window.scrollY > 60) {
+            navbar.classList.add("mt-4", "rounded-full", "mx-auto");
+            navbar.classList.remove("min-w-full");
+            navbar.classList.add("w-11/12");
+            rightNav.classList.remove("min-w-32");
+            rightNav.classList.add("min-w-36");
+            header.classList.add("flex", "justify-center");
 
-          // Mengganti src dari elemen img
-          logoImg.src = "./assets/img/logo.png"; // Ganti dengan URL gambar baru
-        } else {
-          navbar.classList.remove("mt-4", "rounded-full", "mx-auto");
-          navbar.classList.replace("w-11/12", "min-w-full");
-          header.classList.remove("flex", "justify-center");
+            // Mengganti src dari elemen img
+            logoImg.src = "./assets/img/logo.png"; // Ganti dengan URL gambar baru
+          } else {
+            navbar.classList.remove("mt-4", "rounded-full", "mx-auto");
+            navbar.classList.add("min-w-full");
+            navbar.classList.remove("w-11/12");
+            rightNav.classList.add("min-w-32");
+            rightNav.classList.remove("min-w-36");
+            header.classList.remove("flex", "justify-center");
 
-          // Mengganti src kembali ke gambar asli
-          logoImg.src = "./assets/img/logo_2.png"; // Ganti dengan URL gambar asli
+            // Mengganti src kembali ke gambar asli
+            logoImg.src = "./assets/img/logo_2.png"; // Ganti dengan URL gambar asli
+          }
+
+          if (navbar && header && logoImg && rightNav && hotTopic) {
+            const hotTopicRect = hotTopic.getBoundingClientRect();
+
+            if (hotTopicRect.top <= 0) {
+              // navbar.classList.replace("bg-slate-50", "bg-slate-200");
+              // navbar.classList.add("text-white");
+            } else {
+              // navbar.classList.replace("bg-slate-200", "bg-slate-50");
+              // navbar.classList.remove("text-white");
+            }
+          }
         }
       }
 
@@ -395,5 +551,31 @@
 
       requestAnimationFrame(raf);
     </script> -->
+    <script>
+      const tooltipTriggers = document.querySelectorAll(".tooltip-trigger");
+      const tooltip = document.createElement("div");
+      tooltip.classList.add("tooltip");
+      document.body.appendChild(tooltip);
+
+      tooltipTriggers.forEach((trigger) => {
+        trigger.addEventListener("mouseover", (e) => {
+          const tooltipText = e.target.getAttribute("data-tooltip");
+          tooltip.textContent = tooltipText;
+          tooltip.style.opacity = 1;
+        });
+
+        trigger.addEventListener("mousemove", (e) => {
+          const x = e.clientX;
+          const y = e.clientY;
+
+          tooltip.style.left = x + "px";
+          tooltip.style.top = y + "px";
+        });
+
+        trigger.addEventListener("mouseout", () => {
+          tooltip.style.opacity = 0;
+        });
+      });
+    </script>
   </body>
 </html>
