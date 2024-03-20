@@ -51,46 +51,74 @@
             </nav>
     
             <div class="mobile-nav flex justify-center">
-            <nav
-                class="fixed bottom-2 z-[100] mx-auto flex items-center justify-between rounded-3xl border-2 border-gray-800 bg-slate-50 bg-opacity-90 px-8 py-1 shadow-lg backdrop-blur-md transition-all duration-500 ease-out md:px-12"
-            >
-                <img class="w-28" src="./assets/img/logo_2.png" alt="" />
-                <ul class="hidden gap-x-10 md:flex">
-                <li>
-                    <a href="#">
-                    <img
-                        class="tooltip-trigger w-6"
-                        data-tooltip="Home"
-                        src="./assets/img/home/ic-actions-menu.png"
-                        alt=""
-                    />
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    <img
-                        class="tooltip-trigger w-6"
-                        data-tooltip="Blog"
-                        src="./assets/img/home/ic-actions-file.png"
-                        alt=""
-                    />
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    <img
-                        class="tooltip-trigger w-6"
-                        data-tooltip="About"
-                        src="./assets/img/home/ic-actions-list-users.png"
-                        alt=""
-                    />
-                    </a>
-                </li>
-                </ul>
-                <div class="flex gap-3">
-                <div id="right-nav" class="min-w-32 text-end">Login</div>
-                </div>
-            </nav>
+                <nav
+                    class="fixed bottom-2 z-[100] mx-auto flex items-center justify-between rounded-3xl border-2 border-gray-800 bg-slate-50 bg-opacity-90 px-10 py-2 shadow-lg backdrop-blur-md transition-all duration-500 ease-out lg:hidden md:hidden "
+                >
+                    <!-- <img class="w-28" src="./assets/img/logo_2.png" alt="" /> -->
+                    <!-- <ul class="hidden gap-x-10" id="right-nav">
+                        <li>
+                            <a href="#">
+                            <img
+                                class="tooltip-trigger w-6"
+                                data-tooltip="Home"
+                                src="./assets/img/home/ic-actions-menu.png"
+                                alt=""
+                            />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img
+                                class="tooltip-trigger w-6"
+                                data-tooltip="Blog"
+                                src="./assets/img/home/ic-actions-file.png"
+                                alt=""
+                            />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img
+                                class="tooltip-trigger w-6"
+                                data-tooltip="About"
+                                src="./assets/img/home/ic-actions-list-users.png"
+                                alt=""
+                            />
+                            </a>
+                        </li>
+                    </ul> -->
+                    <div class="flex gap-3">
+                        <!-- <div id="right-nav" class="min-w-32 text-end">Login</div> -->
+                        <div id="right-nav" class="min-w-32 flex justify-center gap-7">
+                            <a href="#">
+                                <img
+                                    class="tooltip-trigger w-6"
+                                    data-tooltip="Home"
+                                    src="./assets/img/home/ic-actions-menu.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="#">
+                                <img
+                                    class="tooltip-trigger w-6"
+                                    data-tooltip="Blog"
+                                    src="./assets/img/home/ic-actions-file.png"
+                                    alt=""
+                                />
+                            </a>    
+                            <a href="#">
+                                <img
+                                    class="tooltip-trigger w-6"
+                                    data-tooltip="About"
+                                    src="./assets/img/home/ic-actions-list-users.png"
+                                    alt=""
+                                />
+                            </a>
+
+                        </div>
+                        
+                    </div>
+                </nav>
             </div>
         </header>
         <!-- start main here -->
@@ -99,16 +127,16 @@
                 <h1 class="mt-20 mb-10 text-4xl text-center font-bold">Create your blog here!</h1>
             </section>
             <div class="  flex flex-wrap gap-4 justify-center">
-                <section class=" xl:max-w- px-4 py-4 relative h-[32rem] basis-1/6">
+                <section class="px-4 py-4 basis-1/6">
                     <h3 class="text-xl font-bold">Your Title Here!</h3>
                     <input type="text" placeholder="input Description" class="bg-gray-100 px-2 py-2 font-normal rounded-lg border border-gray-300 w-72">
                 </section>
-                <section class="px-4 relative h-[32rem] basis-4/6">
+                <section class="px-4 lg:basis-4/6 md:basis-4/6 sm:basis-auto">
                     <h2 class="mb-2 text-3xl font-bold">Your Article Here!</h2>
                     <div class="border rounded-lg">
                         <div class="m-3">
                             <p class="text-sm font-normal py-1">Description</p>
-                            <input type="text" placeholder="Start Typing here ..." class="bg-gray-100 text-justify text-sm  font-extralight rounded-lg h-96 w-full text-black">
+                            <input type="text" placeholder="Start Typing here ..." class="bg-gray-100 text-justify text-sm  font-extralight rounded-lg h-96 min-w-full text-black">
                             <button class="bg-red-600 text-white mt-2 p-1 rounded-lg w-full">Post Your Article</button>
                         </div>
                     </div>
