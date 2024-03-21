@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./src/output.css">
+        <script src="https://cdn.tailwindcss.com"></script>  
+    </head>
+    <body>
+        <header id="header">
+            <nav
+            id="navbar"
+            class="fixed z-[100] flex min-w-full max-w-full items-center justify-between bg-slate-50 bg-opacity-70 px-8 py-1 shadow-lg backdrop-blur-md transition-all duration-500 ease-out md:px-12"
+            >
+            <img class="w-28" src="./assets/img/logo_2.png" alt="" />
+            <ul class="hidden gap-x-10 md:flex">
+                <li>
+                <a href="#">
+                    <img
+                    class="tooltip-trigger w-6"
+                    data-tooltip="Home"
+                    src="./assets/img/home/ic-actions-menu.png"
+                    alt=""
+                    />
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                    <img
+                    class="tooltip-trigger w-6"
+                    data-tooltip="Blog"
+                    src="./assets/img/home/ic-actions-file.png"
+                    alt=""
+                    />
+                </a>
+                </li>
+                <li>
+                <a href="#">
+                    <img
+                    class="tooltip-trigger w-6"
+                    data-tooltip="About"
+                    src="./assets/img/home/ic-actions-list-users.png"
+                    alt=""
+                    />
+                </a>
+                </li>
+            </ul>
+            <div class="flex gap-3">
+                <div id="right-nav" class="min-w-32 text-end">Login</div>
+            </div>
+            </nav>
+    
+            <div class="mobile-nav flex justify-center">
+                <nav
+                    class="fixed bottom-2 z-[100] mx-auto flex items-center justify-between rounded-3xl border-2 border-gray-800 bg-slate-50 bg-opacity-90 px-10 py-2 shadow-lg backdrop-blur-md transition-all duration-500 ease-out lg:hidden md:hidden "
+                >
+                    <!-- <img class="w-28" src="./assets/img/logo_2.png" alt="" /> -->
+                    <!-- <ul class="hidden gap-x-10" id="right-nav">
+                        <li>
+                            <a href="#">
+                            <img
+                                class="tooltip-trigger w-6"
+                                data-tooltip="Home"
+                                src="./assets/img/home/ic-actions-menu.png"
+                                alt=""
+                            />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img
+                                class="tooltip-trigger w-6"
+                                data-tooltip="Blog"
+                                src="./assets/img/home/ic-actions-file.png"
+                                alt=""
+                            />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img
+                                class="tooltip-trigger w-6"
+                                data-tooltip="About"
+                                src="./assets/img/home/ic-actions-list-users.png"
+                                alt=""
+                            />
+                            </a>
+                        </li>
+                    </ul> -->
+                    <div class="flex gap-3">
+                        <!-- <div id="right-nav" class="min-w-32 text-end">Login</div> -->
+                        <div id="right-nav" class="min-w-32 flex justify-center gap-7">
+                            <a href="#">
+                                <img
+                                    class="tooltip-trigger w-6"
+                                    data-tooltip="Home"
+                                    src="./assets/img/home/ic-actions-menu.png"
+                                    alt=""
+                                />
+                            </a>
+                            <a href="#">
+                                <img
+                                    class="tooltip-trigger w-6"
+                                    data-tooltip="Blog"
+                                    src="./assets/img/home/ic-actions-file.png"
+                                    alt=""
+                                />
+                            </a>    
+                            <a href="#">
+                                <img
+                                    class="tooltip-trigger w-6"
+                                    data-tooltip="About"
+                                    src="./assets/img/home/ic-actions-list-users.png"
+                                    alt=""
+                                />
+                            </a>
+
+                        </div>
+                        
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- start main here -->
+        <main> 
+            <section>
+                <h1 class="mt-20 mb-10 text-4xl text-center font-bold">Create your blog here!</h1>
+            </section>
+            <div class="  flex flex-wrap gap-4 justify-center">
+                <section class="px-4 py-4 basis-1/6">
+                    <h3 class="text-xl font-bold">Your Title Here!</h3>
+                    <input type="text" placeholder="input Description" class="bg-gray-100 px-2 py-2 font-normal rounded-lg border border-gray-300 w-72">
+                </section>
+                <section class="px-4 lg:basis-4/6 md:basis-3/6 sm:basis-auto">
+                    <h2 class="mb-2 text-3xl font-bold">Your Article Here!</h2>
+                    <div class="border rounded-lg">
+                        <div class="m-3">
+                            <p class="text-sm font-normal py-1">Description</p>
+                            <textarea placeholder="Start Typing here ..." id="" cols="30" rows="10" class="bg-gray-100 text-sm rounded-lg h-96 min-w-full"></textarea>
+                            <button class="bg-red-600 text-white mt-2 p-1 rounded-lg w-full">Post Your Article</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!-- end main here -->
+        <footer class="font-bold">
+            <div class="flex flex-col gap-10 p-10 md:flex-row md:gap-40">
+            <section class="basis-1/5">
+                <img src="./assets/img/logo_2.png" alt="" class="pb-5" />
+                <div class="text-gray-400">
+                <p class="pb-5">
+                    Opening creativity without limits via ultimate bloging platform
+                    conecting all creative souls together.
+                </p>
+                <p class="font-serif">By Acmee 2021</p>
+                </div>
+            </section>
+            <div
+                class="flex basis-2/5 justify-between sm:justify-start sm:gap-10 md:gap-52"
+            >
+                <section class="">
+                <h4 class="pb-5 text-orange-500">CATEGORIES</h4>
+                <ul>
+                    <li class="pb-5"><a href="">All categories</a></li>
+                    <li class="pb-5"><a href="">Daily</a></li>
+                    <li class="pb-5"><a href="">Health</a></li>
+                    <li class="pb-5"><a href="">Life</a></li>
+                    <li class="pb-5"><a href="">Tips and Tricks</a></li>
+                </ul>
+                </section>
+                <section>
+                <h4 class="pb-5 text-orange-500">ABOUT</h4>
+                <ul>
+                    <li class="pb-5"><a href="">Team</a></li>
+                </ul>
+                </section>
+            </div>
+            </div>
+        </footer>
+        <script>
+            function scrolledNavbar() {
+            const navbar = document.getElementById("navbar");
+            const header = document.getElementById("header");
+            const logoImg = document.querySelector("#navbar img");
+            const rightNav = document.getElementById("right-nav");
+            const hotTopic = document.getElementById("hot-topic");
+    
+            if (navbar && header && logoImg && rightNav && hotTopic) {
+                if (window.scrollY > 60) {
+                navbar.classList.add("mt-4", "rounded-full", "mx-auto");
+                navbar.classList.remove("min-w-full");
+                navbar.classList.add("w-11/12");
+                rightNav.classList.remove("min-w-32");
+                rightNav.classList.add("min-w-36");
+                header.classList.add("flex", "justify-center");
+    
+                // Mengganti src dari elemen img
+                logoImg.src = "./assets/img/logo.png"; // Ganti dengan URL gambar baru
+                } else {
+                navbar.classList.remove("mt-4", "rounded-full", "mx-auto");
+                navbar.classList.add("min-w-full");
+                navbar.classList.remove("w-11/12");
+                rightNav.classList.add("min-w-32");
+                rightNav.classList.remove("min-w-36");
+                header.classList.remove("flex", "justify-center");
+    
+                // Mengganti src kembali ke gambar asli
+                logoImg.src = "./assets/img/logo_2.png"; // Ganti dengan URL gambar asli
+                }
+    
+                if (navbar && header && logoImg && rightNav && hotTopic) {
+                const hotTopicRect = hotTopic.getBoundingClientRect();
+    
+                if (hotTopicRect.top <= 0) {
+                    // navbar.classList.replace("bg-slate-50", "bg-slate-200");
+                    // navbar.classList.add("text-white");
+                } else {
+                    // navbar.classList.replace("bg-slate-200", "bg-slate-50");
+                    // navbar.classList.remove("text-white");
+                }
+                }
+            }
+            }
+    
+            // Panggil fungsi scrolledNavbar saat scroll dilakukan
+            window.addEventListener("scroll", scrolledNavbar);
+        </script>
+        <script src="https://unpkg.com/@studio-freight/lenis@1.0.40/dist/lenis.min.js"></script>
+        <!-- <script>
+            const lenis = new Lenis({
+            lerp: 0.03, // Mengatur intensitas interpolasi linear menjadi lebih rendah
+            wheelMultiplier: 0.5, // Nilai wheelMultiplier yang lebih kecil untuk mengurangi jumlah pergerakan scroll
+            });
+    
+            lenis.on("scroll", (e) => {
+            console.log(e);
+            });
+    
+            function raf(time) {
+            lenis.raf(time);
+            requestAnimationFrame(raf);
+            }
+    
+            requestAnimationFrame(raf);
+        </script> -->
+        <script>
+            const tooltipTriggers = document.querySelectorAll(".tooltip-trigger");
+            const tooltip = document.createElement("div");
+            tooltip.classList.add("tooltip");
+            document.body.appendChild(tooltip);
+    
+            tooltipTriggers.forEach((trigger) => {
+            trigger.addEventListener("mouseover", (e) => {
+                const tooltipText = e.target.getAttribute("data-tooltip");
+                tooltip.textContent = tooltipText;
+                tooltip.style.opacity = 1;
+            });
+    
+            trigger.addEventListener("mousemove", (e) => {
+                const x = e.clientX;
+                const y = e.clientY;
+    
+                tooltip.style.left = x + "px";
+                tooltip.style.top = y + "px";
+            });
+    
+            trigger.addEventListener("mouseout", () => {
+                tooltip.style.opacity = 0;
+            });
+            });
+        </script>
+        <br>
+
+    </body>
+</html>
