@@ -1,10 +1,53 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Head Content -->
     <title>Sign In</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link href="./assets/style.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    Hello World
+    <!-- Container untuk membagi menjadi dua bagian -->
+    <div class="flex flex-col md:flex-row min-h-screen">
+        <!-- Bagian Hijau dengan Branding dan Tagline -->
+        <div class="hidden md:flex md:w-1/2 lg:w-1/2 bg-green-700 flex-col justify-between p-12">
+            <div class="mb-auto pt-12 md:pt-0">
+                <a href="index.html">
+                    <img src="./assets/img/logo.png" alt="JOYBLOG Logo" class="h-14">
+                </a>
+            </div>
+            <div class="mt-auto pb-12 md:pb-5">
+                <p class="max-w-xs md:max-w-sm lg:max-w-md text-lg md:text-2xl lg:text-3xl text-left text-white px-4">Create your blog with your own Creativity!</p>
+            </div>
+        </div>
+        
+        <!-- Bagian Form Login -->
+        <div class="w-full flex flex-col justify-center items-center px-4 py-12 sm:p-12">
+            <div class="max-w-md w-full">
+                <a href="index.html">
+                    <img src="./assets/img/logo.png" alt="JOYBLOG Logo" class="h-16 mx-auto mb-8 md:hidden"> <!-- Logo muncul di mobile -->
+                </a>
+                <h2 class="text-3xl font-bold mb-6">Sign In</h2>
+                <form>
+                    <div class="mb-4">
+                        <input type="email" name="email" placeholder="Email address" required class="w-full p-3 border rounded">
+                    </div>
+                    <div class="mb-6">
+                        <input type="password" name="password" placeholder="Password" required class="w-full p-3 border rounded">
+                    </div>
+                    <div class="mb-6 text-right">
+                        <a href="#" class="text-sm text-gray-600 hover:text-gray-900">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="w-full bg-red-500 text-white p-3 rounded">Sign In</button>
+                </form>
+                <p class="mt-6 text-sm text-center text-gray-600">
+                    Don't have an account? <a href="#" class="text-blue-500 hover:text-blue-700">Sign Up</a>
+                </p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
