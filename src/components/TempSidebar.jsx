@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const TempSidebar = () => {
   return (
-    <div className="w-32 bg-white shadow-lg fixed right-3 top-24 p-3 rounded-md border">
+    <div className="w-32 bg-white shadow-lg fixed right-3 top-24 p-3 rounded-md border z-20">
       <h1 className="text-xs mb-3">Just a temp sidebar for make navigation easer</h1>
       <div className="grid grid-cols-2 gap-1">
         <Link
