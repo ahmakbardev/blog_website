@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -9,6 +10,7 @@ const Header = () => {
   const logoImgRef = useRef(null);
   const rightNavRef = useRef(null);
   const hotTopicRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Function to handle tooltip display
@@ -113,12 +115,14 @@ const Header = () => {
         ref={navbarRef}
         className="fixed z-[100] flex min-w-full max-w-full items-center justify-between bg-slate-50 bg-opacity-70 px-8 py-1 shadow-lg backdrop-blur-md transition-all duration-500 ease-out md:px-12"
       >
-        <img
-          className="w-28 sm:w-40"
-          ref={logoImgRef}
-          src="/img/logo_2.png"
-          alt=""
-        />
+        <Link to={"/"}>
+          <img
+            className="w-28 sm:w-40"
+            ref={logoImgRef}
+            src="/img/logo_2.png"
+            alt=""
+          />
+        </Link>
         <ul className="hidden items-center gap-x-10 md:flex">
           <li>
             <a href="#" className="tooltip-trigger" data-tooltip="Home">
@@ -240,7 +244,7 @@ const Header = () => {
             <ul className="flex items-center gap-4">
               <li>
                 {" "}
-                <a href="login.html">Login</a>
+                <Link to={"/login"}>Login</Link>
               </li>
               <li className="search">
                 <a href="#">
@@ -297,7 +301,7 @@ const Header = () => {
               <li className="star">
                 <a href="#">
                   <svg
-                    className="w-4"
+                    className="w-4 hover:fill-orange-300 transition-all ease-in-out"
                     width="22"
                     height="22"
                     viewBox="0 0 22 22"
