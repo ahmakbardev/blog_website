@@ -244,7 +244,7 @@ const Header = () => {
             <ul className="flex items-center gap-4">
               <li>
                 {" "}
-                <Link to={"/login"}>Login</Link>
+                <button onClick={() => {navigate('/login')}}>Login</button>
               </li>
               <li className="search">
                 <a href="#">
