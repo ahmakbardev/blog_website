@@ -1,4 +1,4 @@
-import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -128,14 +128,14 @@ const Hero = () => {
               </div>
             </div>
             <div className="my-10 flex w-full flex-wrap justify-center gap-3 sm:gap-7 md:gap-5 lg:gap-5 xl:justify-start">
-              <div className="xl:max-w- flex min-w-32 max-w-32 flex-col gap-3 rounded-lg px-2 pb-3 pt-3 outline outline-1 outline-slate-200 sm:min-w-32 sm:max-w-48 sm:basis-1/2 md:min-w-40 md:max-w-56 md:rounded-[32px] md:px-3 md:pb-8 lg:max-w-64">
+              <Link to={'/detail/test'} className="xl:max-w- flex min-w-32 max-w-32 flex-col gap-3 rounded-lg px-2 pb-3 pt-3 outline outline-1 outline-slate-200 sm:min-w-32 sm:max-w-48 sm:basis-1/2 md:min-w-40 md:max-w-56 md:rounded-[32px] md:px-3 md:pb-8 lg:max-w-64">
                 <a href="./detail-article.html">
                   <img src="/img/home/card.png" alt="" />
                   <h1 className="text-xs md:text-xl">
                     Simple Juice Recipes to boost your immune system
                   </h1>
                 </a>
-              </div>
+              </Link>
               <div className="xl:max-w- flex min-w-32 max-w-32 flex-col gap-3 rounded-lg px-2 pb-3 pt-3 outline outline-1 outline-slate-200 sm:min-w-32 sm:max-w-48 sm:basis-1/2 md:min-w-40 md:max-w-56 md:rounded-[32px] md:px-3 md:pb-8 lg:max-w-64">
                 <a href="./detail-article.html">
                   <img src="/img/home/card.png" alt="" />

@@ -1,5 +1,4 @@
-import React from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom' 
+import { createBrowserRouter } from 'react-router-dom' 
 import Home from '../home/Home'
 import Login from '../auth/Login'
 import Detail from '../blog/Detail'
@@ -15,7 +14,7 @@ const Router = createBrowserRouter([
         element: <Login />
     },
     {
-        path: "/detail",
+        path: "/detail/:params",
         element: <Detail />
     },
     {

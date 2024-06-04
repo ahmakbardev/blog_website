@@ -5,7 +5,7 @@ const Login = () => {
   return (
     <Layout>
         <div className="pt-20"></div>
-      Ini Halaman Login
+      Ini Halaman Login baru
     </Layout>
   )
 }
